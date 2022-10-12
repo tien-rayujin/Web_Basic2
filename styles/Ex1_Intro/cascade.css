@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+SPECIFIC RULES
+
+h1 is more specific than *
+p b is more specific than p
+p#intro is more specific than p
+
+*/
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* the last is precedence -> so <i>'s color is green */
+i{
+    color: red;
+}
+
+i{
+    color: green;
+}
+
+b{
+    color:goldenrod;
+}
+
+/* !important: highest precedence */
+p b{
+    color: blueviolet !important;
+}
+
+p b{
+    color: coral;
+}
+
+p#intro{
+    font-size: 120%;
+}
+
+p{
+    font-size: 80%;
+}

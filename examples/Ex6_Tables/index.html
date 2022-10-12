@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- table: tag -->
+    <!-- tr: table row -->
+    <!-- td: table data (each cell in row)-->
+    <table>
+        <tr>
+            <td>15</td>
+            <td>20</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>20</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>15</td>
+            <td>35</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Sold movie ticket -->
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th scope="row">Ticket sold:</th>
+            <td>120</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <th scope="row">Total sales:</th>
+            <td>$600</td>
+            <td>$625</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Time table -->
+    <!-- width: attribute specific each <th> <td> width -->
+    <!-- cellpadding: for specific space between each row -->
+    <!-- cellspacing: speicfir space between each cell -->
+    <table border="4" bgcolor="#ccccccc" width="375" cellpadding="2" cellspacing="0.2">
+        <tr>
+            <th width="200"></th>
+            <th scope="col">8am</th>
+            <th scope="col">10am</th>
+            <th scope="col">12am</th>
+            <th scope="col">2am</th>
+        </tr>
+        <tr>
+            <th scope="row">Monday</th>
+            <td colspan="3">Coding</td>
+            <td>Math</td>
+        </tr>
+        <tr>
+            <th colspan="row">Tuesday</th>
+            <td colspan="2">Gym</td>
+            <td colspan="2">Home ec</td>
+        </tr>
+        <tr>
+            <th scope="row">Wednesday</th>
+            <td colspan="3" rowspan="2" bgcolor="#808080">Coding</td>
+            <td rowspan="2" width="100">Math</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Movie -->
+    <table width="350">
+        <tr>
+            <th></th>
+            <th>ABC</th>
+            <th>BBC</th>
+            <th>CNN</th>
+        </tr>
+        <tr>
+            <th>6pm - 7pm</th>
+            <td rowspan="2">Movie</td>
+            <td>Comedy</td>
+            <td>News</td>
+        </tr>
+        <tr>
+            <th>7pm - 8pm</th>
+            <td>Sport</td>
+            <td>Current Affairs</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- thead: indicate table head -->
+    <!-- tbody: table body -->
+    <!-- tfoot: last income table foot -->
+    <!-- use for create a long tables -->
+    <table bgcolor="#efef">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1st January</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>2nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>3nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>4nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>5nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>6nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>7nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>8nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th>31st January</th>
+                <td>129</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>7824</td>
+                <td>1241</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

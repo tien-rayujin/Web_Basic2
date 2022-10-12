@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Color</title>
+    <style>
+        p{
+            /* border statements is the shorthand
+            weight style color */
+            border: 15px solid #0088dd;
+            width: fit-content;
+            border-style: double;
+            padding: 10px;
+        }
+        p.one{
+            /* border-color: blueviolet; */
+            
+        }
+        p.two{
+            /* refering to specific each side border-color
+            can be assign to single statement depends on
+            clockwise circle: top right bot left */
+            border-color: chocolate aqua darkgray chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one">The ARP Odyssey was introduced in
+        1972.</p>
+    <p class="two">The ARP Odyssey was introduced in
+        1972.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        ul>li{
+            /* make the block elements li>ul to inline */
+            display: inline;
+            font-size: 150%;
+            border-bottom: 2px double #0088dd;
+            color: #0088dd;
+            padding: 7px;
+            margin: 5px;
+        }
+        #coming-soon{
+            /* hide the box */
+            display: none;
+        }
+        #maintain{
+            /* hide box but leave the space */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li id="maintain">Products</li>
+        <li id="coming-soon">Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>

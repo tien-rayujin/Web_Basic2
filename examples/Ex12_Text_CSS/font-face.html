@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @font-face{
+            font-family: GrapeNuts-Regular;
+            src: url('GrapeNuts-Regular.ttf');
+        }
+        *{
+            font-family: GrapeNuts-Regular;
+            /* weight of sketch */
+            font-weight: 100%;
+            /* normal italic bold oplique */
+            font-style: normal;
+            /* upper-lower case, capitalize*/
+            text-transform: none;
+        }
+        .credits{
+            /* under-over line, line through, blink */
+            text-decoration: underline;
+            /* aligning the text: center left right justify */
+            text-align: center;
+        }
+        /* h1{
+            background-image: url("/images/gifs/OIP.jfif");
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        } */
+        p{
+            text-align: justify;/* every line but the last line not full in line*/
+            /* indenting the text: space the first line of paragraph */
+            text-indent: 30px;
+        }
+        h2+p{
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* adjust ascender and descender */
+            line-height: 1.5em;
+            /* space between each letters */
+            letter-spacing: 2px;
+            /* space between each words */
+            word-spacing: 0.25em;
+            /*  */
+        }
+        p>img{
+            width: 100px;
+            height: 100px;
+        }
+        /* vertical-aligning text: 
+        baseline
+        sub
+        super
+        top
+        text-top
+        middle
+        bottom
+        text-bottom
+        */
+        #oneyear{
+            vertical-align: text-top;
+        }
+        #twoyear{
+            vertical-align: middle;
+        }
+        #threeyear{
+            vertical-align: text-bottom;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="Webfontkit_GrapeNuts-Regular/stylesheet.css" type="text/css"> -->
+    
+</head>
+<body>
+    <h1>Briards</h1>
+    <p class="credits">by Ivy Duckett</p>
+    <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+     Briard">briard</a>, or berger de brie, is
+        a large breed of dog traditionally used as
+        a herder and guardian of sheep...</p>
+    <h2>Characteristic</h2>
+    <p>The coat is long (no less than 7 cm), thick and harsh like that of a goat; it may be solid black, grey, blue or
+        fawn, or fawn overlaid with black; greying is seen to a variable extent. Dogs stand 62-68 cm at the withers,
+        bitches about 56-64 cm. An unusual characteristic of the breed is the double dewclaw on the hind legs; the
+        breed standard specifies a single or absent dewclaw as a disqualifying fault</p>
+
+    <div class="vertical-align">
+        <h2>Life</h2><p></p>
+        <p><img id="oneyear" src="/images/ex_img/briards_1year.jpg" > One year</p>
+        <p><img id="twoyear" src="/images/ex_img/briards_2year.jpg" > Two year</p>
+        <p><img id="threeyear" src="/images/ex_img/briards_3year.jpg" > Three year</p>
+    </div>
+</body>
+</html>

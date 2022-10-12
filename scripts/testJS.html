@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: large;
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
+        <script>
+            function clicking(){
+                document.getElementById("myID").innerHTML = "My First Test JS";
+            }
+        </script>
+</head>
+<body>
+    <h1>First demo</h1>
+    <p>Demo example of Javascript </p>
+    <hr>
+    <strong>
+        <script type="text/javascript">
+            document.write("Hello world from JS");
+        </script>
+    </strong>
+    <hr>
+
+    <script type="text/javascript">
+        document.write("<strong>Hello</strong> world from <font color='blue'>JS</font>");
+    </script>   
+    <hr>
+
+    <script type="text/javascript">
+        document.write("Hello world from JS");
+    </script>
+
+    <p id="myID">" Helllo Test here "!</p>
+    <div>
+        <input type="button" id = "myID" value="ClickOnMe!" onclick="clicking()"></input>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+body{
+    overflow-x: hidden;
+}
+
+.logo-img{
+    text-align: center;
+}
+.logo-img img{
+    width: 120px;
+    height: 80px;
+    margin: 12px 0px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+}
+
+.seller{
+    margin: 0 20px;
+}
+.seller-item{
+    padding: 20px;
+}
+.seller-item-content{
+    position: relative;
+    padding: 12px;
+    background-color: rgb(192, 179, 179);
+}
+.seller-item-content img{
+    width: 100%;
+}
+.seller-item-text{
+    background-color: rgba(255, 255, 255,0.5);
+    position: absolute;
+    color: rgb(163, 158, 158);
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.sale-off{
+
+}
+.sale-off-item{
+
+}
+.sale-off-item-content{
+    background-color: rgb(192, 179, 179);
+}
+
+.sale-off-item-content img{
+    width: 100%;
+    height: 360px;
+}
+.sale-off-item-text{
+
+}
+
+.sale-off-item-text p:first-child{
+    border-bottom: 1px solid black;
+}
+.sale-off-item-text p:nth-child(2) span{
+    font-weight: bold;
+}
+.sale-off-item-text p:last-child span{
+    color: orangered;
+}
+.showroom{
+
+}
+.showroom-img img{
+    width: 100%;
+}
+.showroom-iframe iframe{
+    width: 100%;
+    height: 416px;
+}
+
+.footer-content{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .hidden-mobile{
+        display: none;
+    }
+    .showroom-img{
+        margin-top: 20px;
+    }
+}

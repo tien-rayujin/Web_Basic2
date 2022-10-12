@@ -1,0 +1,22 @@
+/* pseudo-classes */
+/* default: not yet visit */
+a:link {
+    color: deeppink;
+    text-decoration: none;
+}
+
+/* had visited */
+a:visited {
+    color: black;
+}
+
+/* mouse-pointer hover link */
+a:hover {
+    color: rgb(88, 168, 221);
+    text-decoration: underline;
+}
+
+/* can apply for button, the animation when the pointer click & hold */
+a:active {
+    color: rgb(64, 226, 91);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImg(p1){
+            if(p1 == 1){
+                document.getElementById("Img1").src = "/images/ex_img/briards_2year.jpg"
+            }else document.getElementById("Img1").src = "/images/ex_img/briards_3year.jpg"
+        }
+    </script>
+    <style>
+        p{
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/images/ex_img/briards_1year.jpg" width="200px" height="200px" id="Img1" onmouseleave="changeImg(2)" onmouseover="changeImg(1)">
+    </div>
+
+    <div>
+        <p>Hi test here</p>
+    </div>
+</body>
+</html>

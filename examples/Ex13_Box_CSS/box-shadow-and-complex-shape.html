@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        #rectangle1 {
+            background-color: #70c4f8;
+            /* box-shadow: horizon-vertical-blur-spread */
+            box-shadow: 10px 10px 5px 1px rgb(72, 72, 72);
+            /* can use either: -moz-box-shadow  or -webkit-box-shadow */
+            margin: 50px 50px;
+            width: 100px;
+            height: 100px;
+            border-radius: 12px 24px 0.2em 1em;
+        }
+        #rectangle2{
+            background-color: #03cf66;
+            box-shadow: 10px 10px 12px 6px rgb(49, 190, 112);
+            margin: 50px 50px;
+            width: 100px;
+            height: 100px;
+            /* border-radius -> radius of each edge */
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+        #rectangle3{
+            background-color: #73c2f4;
+            box-shadow: 0px 0px 50px rgb(72, 72, 72);
+            margin: 50px 50px;
+            width: 100px;
+            height: 100px;
+            border-bottom-right-radius: 50px 25px;
+            border-top-left-radius: 25px 50px;
+        }
+        #rectangle4{
+            background-color: #73c2f4;
+            /* inset:  inner-shadow */
+            box-shadow: inset 0px 0px 50px rgb(72, 72, 72);
+            margin: 50px 50px;
+            width: 100px;
+            height: 100px;
+            /* border-radius: 25px 11px 25px 50px; */
+            border-radius:  1em 4em 1em 4em / 2em 1em 2em 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle">
+        <div id="rectangle1"></div>
+        <div id="rectangle2"></div>
+        <div id="rectangle3"></div>
+        <div id="rectangle4"></div>
+        <div id="rectangle5"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min/Max width Box</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        tr>th{
+            color: #0088dd;
+            border-bottom: 1px solid #0088dd;
+        }
+        /* min/max of content depends on the device's screen */
+        td.description{
+            min-width: 300px;
+            max-width: 600px;
+            text-align: justify;
+            padding: 10px;
+            margin: 0px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th cellspacing="20">Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td><img src="/images/ex_img/Rhodes-MK8-electric-piano-iso_FB.jpg" width="200" height="100" alt="Fender Rhodes" /></td>
+                <td class="description">The Rhodes piano is an
+                    electro-mechanical piano, invented by Harold
+                    Rhodes during the fifties and later
+                    manufactured in a number of models ...</td>
+                <td>$1400</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

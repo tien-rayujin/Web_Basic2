@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="../../scripts/upload.php" method="post">
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label>Name: <input type="text" name="name"></label><br>
+            <label>Email: <input type="email" name="email"></label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Your Reviews:</legend>
+            <label>How did you here about us?
+                <select name="browser" id="browser">
+                    <option value="google">Google</option>
+                    <option value="discord">Discord</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="other">Other...</option>
+                </select>
+            </label>
+            <br>
+            <br>
+
+            <label>Would you visit again? <br>
+                <input type="radio" name="rating" value="yes"> Yes
+                <input type="radio" name="rating" value="no"> No
+                <input type="radio" name="rating" value="maybe"> Maybe
+            </label>
+            <br>
+            <br>
+
+            <label>Comments: <br>
+                <textarea name="comment" id="comments" placeholder="Enter your comments..." cols="30"
+                    rows="5"></textarea>
+            </label>
+            <br>
+
+            <input type="checkbox" id="signup" checked="checked">
+            <label for="signup">Sign me up for email updates</label>
+            <br>
+            <input type="submit" value="Submit review">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

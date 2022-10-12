@@ -1,0 +1,59 @@
+/* 1.Universal selector: appllies to all elements */
+*{
+    color: aliceblue;
+}
+
+
+/* 2.Type selector: appllies to elements name */
+h1,h2,h3{
+    color: aliceblue;
+}
+
+
+/* 3.Class selector */
+.note{
+    color: aliceblue;
+}
+/* more specific which type of class is rule */
+p.note{
+    color: aliceblue;
+}
+
+
+/* 4.ID selector */
+#introduction{
+    color: aliceblue;
+} 
+b#introduction{
+    /* any <b> in elements had id specific */
+    color: aliceblue;
+}
+
+
+/* 5.Child selector: elements that is child of other */
+li>a{
+    /* all <a> is child of <li> */
+    color: aliceblue;
+}
+
+
+
+/* 6.Descendant selector: not just a direct chil of that elements */
+p a{
+    /* any <a> that sit inside <p> event if other elements nested */
+    color: aliceblue;
+}
+
+
+/* 7.Adjacent sibling selector: next of another */
+h1+p{
+    /* target <p> that sit next into <h1> */
+    color: aliceblue;
+}
+
+
+/* 8.General sibling selector: next to but does not have to be the directly preceing elements */
+h1~p{
+    /* if had 2 <p> are siblings of <h1> -> applies to both*/
+    color: aliceblue;
+}

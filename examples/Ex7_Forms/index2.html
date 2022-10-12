@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- get: method value of form added to URL specified int the action attribute -->
+    <!-- use get for: short form(search box), just retrieving data from web server (do not send info) -->
+
+    <!-- post: method values are send in what called HTTP headers -->
+    <!-- use post for: allow user to upload file, very long, contain sensitive data, add or del info -->
+    <form action="scripts/login.php" method="get">
+        <p>Username: 
+            <!-- type: text for single line text input -->
+            <!-- name: form control and is send along with the information they entered to the server -->
+            <!-- required: attribute make sure user fill up this fields -->
+            <input type="text" name="username" required="required" size="15" maxlength="15">
+        </p>
+        <p>Password:
+            <input type="password" name="password" required="required" size="15" maxlength="25">
+        </p>
+        <p>What does LOL mean?</p>
+        <textarea name="comments" id="comments1" placeholder="Enter your comments..." cols="20" rows="5"></textarea>
+        <input type="submit">
+    </form>
+    
+
+    <!-- Radio button -->
+    <form action="scripts/upload.php" method="get">
+        <p>Which champion you like most? <br>
+            <input type="radio" name="champion" value="rengar"> rengar
+            <input type="radio" name="champion" value="riven"> riven
+            <input type="radio" name="champion" value="camile" checked="checked"> camile
+        </p>
+    </form>
+
+    <!-- Check box -->
+    <!-- If users need to see all options at a glance -->
+    <form action="scripts/upload.php" method="get">
+        <p>Which is your main role(s)?
+            <br>
+            <input type="checkbox" name="role" value="top" checked="checked"> top
+            <input type="checkbox" name="role" value="top"> jungle
+            <input type="checkbox" name="role" value="top"> mid
+            <input type="checkbox" name="role" value="top"> ad 
+            <input type="checkbox" name="role" value="top"> support
+        </p>
+    </form>
+
+    <!-- Drop down list -->
+    <!-- If there is a very long list of options (such as a list of countries) -->
+    <form action="scripts/upload.php" method="post">
+        <p>What build you ussualy build on your favourite champion?</p>
+        <select name="build" size="1">
+            <option value="lethality">lethality</option>
+            <option value="tank">tank</option>
+            <option value="ap">ap</option>
+            <option value="semi_dame" selected="selected">semi_dame</option>
+            <option value="crit">crit</option>
+        </select>
+    </form>
+
+    <!-- With long list option and need to showed case -> specific size and set multiple -->
+    <form action="scripts/upload.php" method="get">
+        <p>What is your main champion on PC LoL?</p>
+        <select name="mainPC" size="4" multiple="multiple">
+            <option value="talon" selected="selected">talon</option>
+            <option value="zed">zed</option>
+            <option value="rengar" selected="selected">rengar</option>
+            <option value="riven">riven</option>
+            <option value="vayne">vayne</option>
+        </select>
+    </form>
+
+    <!-- upload file -->
+    <form action="scripts/upload.php" method="post">
+        <p>Upload your background:</p>
+        <input type="file" name="user_background"><br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <!-- submit -->
+    <form action="scripts/upload.php" method="post">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email">
+        <input type="submit" name="subscribe" value="Subscribe">
+    </form>
+
+    <!-- images for the subscribe button -->
+    <form action="scripts/upload.php" method="get">
+        <p>Subscribe with images</p>
+        <input type="text" name="email2">
+        <input type="image" src="/images/interface/Subscribe_button.jpg" width="100" height="30">
+    </form>
+
+    <!-- button images combine text and images in button -->
+    <form action="scripts/add.php" method="post">
+        <button>
+            <img src="/images/gifs/favbutton2.gif" alt="Add button gif" width="50" height="50">
+            <input type="text" placeholder="Do you love yourself ?">
+            <input type="hidden" name="bookmark" value="lyrics">
+        </button>
+    </form>
+
+
+    <!-- labelling form control -->
+    <!-- 2 ways to use label -->
+    <form action="scripts/upload.php" method="post">
+        <label>Age: <input type="text" name="age"></label>
+        <br>Gender:
+        <input id="male" type="radio" name="gender" value="m">
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="gender" value="f"> 
+        <label for="female">Female</label>
+    </form>
+    <hr>
+
+    <!-- legend: tag specific for each fieldset indicate purpose of that group -->
+    <!-- each form control should have <label> -->
+    <form action="" method="post">
+        <fieldset>
+            <legend>Contact details</legend>
+            <label>Email: <br><input type="text"></label> <br>
+            <label>Mobile: <br><input type="text"></label> <br>
+            <label>Telephone: <br><input type="text"></label> <br>
+            <label>Departure day: <br><input type="date" name="departure"></label> <br>
+            <label>Email: <br><input type="email" name="email"></label> <br>
+            <label>Website Address: <br><input type="url" name="url"></label> <br>
+            <label>Searching for: <br><input type="search" placeholder="Enter you keyword..." name="search"></label> <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
